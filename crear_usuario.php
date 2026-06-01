@@ -6,10 +6,10 @@ session_start();
 require_once 'conexion.php';
 
 // Verificación de acceso
-if (!isset($_SESSION['usuario_id'])) {
-    header("Location: login.php");
-    exit();
-}
+'if (!isset($_SESSION['usuario_id'])) {
+ '   header("Location: login.php");
+  '  exit();
+'}
 
 // LÓGICA DE CREACIÓN
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
